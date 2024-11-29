@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main id="app-layout">
+        <section id="left-col">
+            <header>
+                <div class="left"></div>
+                <div class="title">連絡先</div>
+                <div class="right">
+                    <button class="add-btn">追加</button>
+                </div>
+            </header>
+        </section>
+        <section id="right-col">
+            <header>
+                <div class="title">名前</div>
+            </header>
+        </section>
+
+
+    </main>
+
+    <!-- モーダル  -->
+
+    <div id="modal-overlay">
+        <div id="modal">
+            <div class="modal-header">
+                <h2>Add Contact</h2>
+            </div>
+            <ul id="error-label"></ul>
+            <div class="modal-content">
+                <div class="row">
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input type="text" id="firstname">
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" id="lastname">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="number" id="age">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="number" id="phone">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" id="email">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button class="close-btn">Close</button>
+                <button class="save-btn">Save</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="firebase-sdk.js" type="module"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
